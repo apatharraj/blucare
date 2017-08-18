@@ -1,0 +1,186 @@
+<!--
+  Generated template for the OnDemandPcpPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-buttons end>
+      <button ion-button icon-only>
+          <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title class="nav-bg">Available Caregiver(s)</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      Recently Visited
+    </ion-card-header>
+
+    <ion-list>
+      <ion-item *ngFor="let doctor of recentDoctors">
+        <!--<img class="profile-pic" [src]="doctor.photoUrl" alt="{{doctor.name}}" item-left>
+        <h1>{{doctor.doctorname}}</h1>
+        <h2>{{doctor.hospitalname}}</h2>
+        <p>{{doctor.hospitaladdress}}</p>
+        <p>
+          <ion-icon name="pin"></ion-icon> {{doctor.hospitaldistance}}</p>
+        <p class="cost">{{doctor.cost}}</p>
+        <ul>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u519.png" /> </li>
+        </ul>
+        <button ion-button icon-left clear item-right class="ion-button-clock" (click)="ondemandpcpcalendarPage()">
+      <ion-icon ios="ios-time" md="md-time"></ion-icon>
+    </button>-->
+        <img class="profile-pic" [src]="doctor.photoUrl" alt="{{doctor.doctorName}}" item-left>
+        <h1>{{doctor.doctorName}}</h1>
+        <h2>{{doctor.hospitalName}}</h2>
+        <p>{{doctor.hospitalAddress}}</p>
+        <p>
+          <ion-icon name="pin"></ion-icon> {{doctor.miles}}</p>
+        <p class="cost">Appox. copay {{doctor.copay}}</p>
+        <rating [(ngModel)]="doctor.ratings" [disabled]="true">
+        </rating>
+        <button ion-button icon-left clear item-right class="ion-button-clock" (click)="ondemandpcpcalendarPage(doctor)">
+      <ion-icon ios="ios-time" md="md-time"></ion-icon>
+    </button>
+      </ion-item>
+      <!--<ion-item>
+        <img class="profile-pic" src="../../assets/images/u511.png" item-left>
+        <h1>Dr. Alice Lawson</h1>
+        <h2>Highland Hospital</h2>
+        <p>7453 Golden Avenue</p>
+        <p>
+          <ion-icon name="pin"></ion-icon> 1.3 miles</p>
+        <p class="cost">Appox. copay $50</p>
+        <ul>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u519.png" /> </li>
+        </ul>
+        <button ion-button icon-left clear item-right class="ion-button-clock" (click)="ondemandpcpcalendarPage()">
+      <ion-icon ios="ios-time" md="md-time"></ion-icon>
+    </button>
+      </ion-item>
+      <ion-item>
+        <img class="profile-pic" src="../../assets/images/u547.png" item-left>
+        <h1>Dr. Jesse Hardy</h1>
+        <h2>Alameda County Medical Center</h2>
+        <p>1369 Stanley Street</p>
+        <p>
+          <ion-icon name="pin"></ion-icon> 1.5 miles</p>
+        <p class="cost">Appox. copay $60</p>
+        <ul>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u536.png" /> </li>
+          <li><img src="../../assets/images/u536.png" /> </li>
+        </ul>
+        <button ion-button icon-left clear item-right class="ion-button-clock">
+      <ion-icon ios="ios-time" md="md-time"></ion-icon>
+    </button>
+      </ion-item>
+      <ion-item>
+        <img class="profile-pic" src="../../assets/images/u698.png" item-left>
+        <h1>Dr. Benjamin Green</h1>
+        <h2>Eden Medical Center</h2>
+        <p>4113 Sunny Avenue</p>
+        <p>
+          <ion-icon name="pin"></ion-icon> 2 miles</p>
+        <p class="cost">Appox. copay $60</p>
+        <ul>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u536.png" /> </li>
+          <li><img src="../../assets/images/u536.png" /> </li>
+          <li><img src="../../assets/images/u536.png" /> </li>
+        </ul>
+        <button ion-button icon-left clear item-right class="ion-button-clock">
+      <ion-icon ios="ios-time" md="md-time"></ion-icon>
+    </button>
+      </ion-item>-->
+
+
+    </ion-list>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      Recommended PCPs
+    </ion-card-header>
+    <button type="button" (click)="godash()">Tst</button>
+    <ion-list>
+      <h3>Sort By: <strong> Rating </strong> <span> | </span> Distance <span> | </span> Time <span> | </span> Copay</h3>
+      <ion-item>
+        <img class="profile-pic" src="../../assets/images/u530.png" item-left>
+        <h1>Dr. Sofia Goodwin</h1>
+        <h2>West Age Hospital</h2>
+        <p>2665 High-Low Way</p>
+        <p>
+          <ion-icon name="pin"></ion-icon> 5 miles</p>
+        <p class="cost">Appox. copay $100</p>
+        <ul>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u536.png" /> </li>
+          <li><img src="../../assets/images/u536.png" /> </li>
+          <li><img src="../../assets/images/u536.png" /> </li>
+          <li><img src="../../assets/images/u536.png" /> </li>
+        </ul>
+        <button ion-button icon-left clear item-right class="ion-button-clock">
+      <ion-icon ios="ios-time" md="md-time"></ion-icon>
+    </button>
+      </ion-item>
+      <ion-item>
+        <img class="profile-pic" src="../../assets/images/u511.png" item-left>
+        <h1>Dr. Alice Lawson</h1>
+        <h2>Highland Hospital</h2>
+        <p>7453 Golden Avenue</p>
+        <p>
+          <ion-icon name="pin"></ion-icon> 1.3 miles</p>
+        <p class="cost">Appox. copay $50</p>
+        <ul>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u519.png" /> </li>
+        </ul>
+        <button ion-button icon-left clear item-right class="ion-button-clock">
+      <ion-icon ios="ios-time" md="md-time"></ion-icon>
+    </button>
+      </ion-item>
+      <ion-item>
+        <img class="profile-pic" src="../../assets/images/u547.png" item-left>
+        <h1>Dr. Jesse Hardy</h1>
+        <h2>Alameda County Medical Center</h2>
+        <p>1369 Stanley Street</p>
+        <p>
+          <ion-icon name="pin"></ion-icon> 1.5 miles</p>
+        <p class="cost">Appox. copay $60</p>
+        <ul>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u536.png" /> </li>
+          <li><img src="../../assets/images/u536.png" /> </li>
+        </ul>
+        <button ion-button icon-left clear item-right class="ion-button-clock">
+      <ion-icon ios="ios-time" md="md-time"></ion-icon>
+    </button>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+</ion-content>

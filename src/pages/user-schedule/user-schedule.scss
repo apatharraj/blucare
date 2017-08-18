@@ -1,0 +1,82 @@
+page-user-schedule {
+  ion-content {
+    background: url(../../assets/images/u264.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+  }
+  ion-list button {
+    width: 24px !important;
+    height: 24px !important;
+    background-color: transparent !important;
+  }
+  ion-list button ion-icon {
+    color: rgb(93, 162, 218)
+  }
+  ion-list ion-buttons {
+    width: 60px;
+    display: inline-block;
+  }
+  ion-list .bar-buttons-ios[right] {
+    right: 17px;
+    position: absolute;
+  }
+  ion-card {
+    border-radius: 0px !important;
+    background: transparent !important;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3) !important;
+    position: absolute;
+    top: 60%;
+  }
+  ion-card h1 {
+    font-weight: 700 !important;
+    font-style: normal !important;
+    font-size: 28px !important;
+    color: #2886CC !important;
+    text-align: center;
+    margin-bottom: 10px !important;
+  }
+  ion-card h2 {
+    font-weight: 200 !important;
+    font-style: normal !important;
+    font-size: 16px !important;
+    color: #2886CC;
+    text-align: center;
+    margin-bottom: 20px !important;
+  }
+  ion-card p {
+    font-weight: 200;
+    font-style: normal;
+    font-size: 36px !important;
+    color: #2786CB !important;
+    text-align: center;
+  }
+  .sameday {
+    background: #6EB2E1;
+  }
+  .schedule {
+    background: #475EA9;
+  }
+  .sameday,
+  .schedule {
+    text-align: center;
+    color: #fff;
+    font-family: 'OpenSans', 'Open Sans';
+    font-size: 16px;
+    padding: 15px 0px 15px 0px;
+    width: 50%;
+    float: left;
+    h6 {
+      font-family: 'OpenSans', 'Open Sans';
+      font-weight: 400;
+      font-style: normal;
+      font-size: 14px;
+      color: #FFFFFF;
+      padding: 10px 0px;
+    }
+    img {
+      width: 56px;
+      height: 56px;
+    }
+  }
+}

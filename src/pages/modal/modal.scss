@@ -1,0 +1,68 @@
+page-modal {
+  ion-item ion-buttons {
+    width: 50%;
+    display: inline-block;
+    height: 160px;
+  }
+  ion-item {
+    padding: 0 !important;
+  }
+  ion-item ion-buttons:first-child {
+    background: linear-gradient(135deg, rgba(77, 108, 198, 1) 0%, rgba(77, 108, 198, 1) 0%, rgba(71, 94, 169, 1) 100%, rgba(71, 94, 169, 1) 100%);
+  }
+  ion-item ion-buttons:last-child {
+    background: linear-gradient(135deg, rgba(75, 104, 191, 1) 0%, rgba(75, 104, 191, 1) 0%, rgba(75, 104, 191, 1) 100%, rgba(75, 104, 191, 1) 100%);
+  }
+  ion-label {
+    margin: 0 !important;
+  }
+  ion-item button {
+    margin: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    border: 0 !important;
+    padding: 0 !important;
+  }
+  .inverted-arrow button {
+    float: right;
+    background: #4E64AF url(../img/u24_1.png) no-repeat center !important;
+    background-position: center center;
+    width: 50px;
+    height: 49px !important;
+    box-shadow: none;
+    padding: 0;
+    background-size: 40px 40px;
+    right: -2px;
+    bottom: 0px;
+    border: 0px;
+    padding: 5px !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    img {
+      -ms-transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+  }
+  ion-item button {
+    background: -webkit-linear-gradient(315deg, rgba(77, 108, 198, 1) 0%, rgba(77, 108, 198, 1) 0%, rgba(71, 94, 169, 1) 100%, rgba(71, 94, 169, 1) 100%) !important;
+    background: -moz-linear-gradient(135deg, rgba(77, 108, 198, 1) 0%, rgba(77, 108, 198, 1) 0%, rgba(71, 94, 169, 1) 100%, rgba(71, 94, 169, 1) 100%) !important;
+    background: linear-gradient(135deg, rgba(77, 108, 198, 1) 0%, rgba(77, 108, 198, 1) 0%, rgba(71, 94, 169, 1) 100%, rgba(71, 94, 169, 1) 100%) !important;
+    border: none !important;
+    border-radius: 0px !important;
+  }
+  .item-inner {
+    padding: 0 !important;
+  }
+  ion-item ion-icon {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+  }
+  ion-item p {
+    width: 100%;
+    text-align: center;
+    color: #fff !important;
+  }
+}

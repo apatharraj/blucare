@@ -1,0 +1,48 @@
+page-login {
+  .log-icon {
+    background: #455BA6;
+    position: relative;
+    top: 370px;
+    width: 50px;
+    height: 49px;
+    float: right;
+  }
+  .log-icon img {
+    width: 40px;
+    height: 40px;
+    margin: 4px auto;
+    display: block;
+  }
+  .loading {
+    width: 100%;
+    /* height: 80px; */
+    position: relative;
+    top: 50px;
+    img {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  .heading {
+    width: 126px;
+    height: 42px;
+    margin: 0 auto;
+    position: relative;
+    top: 70px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .login-bg {
+    background: url(../assets/images/u51.png) no-repeat center center;
+    width: 100%;
+    background-size: cover;
+    display: block;
+    height: 100%;
+    min-height: 100%;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

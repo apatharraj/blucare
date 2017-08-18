@@ -1,0 +1,207 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-buttons end>
+      <button ion-button icon-only>
+          <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title class="nav-bg">Available Primary Care Providers</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      Recently Visited
+    </ion-card-header>
+
+    <ion-list>
+      <ion-item *ngFor="let doctor of recentDoc">
+        <img class="profile-pic" [src]="doctor.photoUrl" alt="{{doctor.doctorName}}" item-left>
+        <h1>{{doctor.doctorName}}</h1>
+        <h2>{{doctor.hospitalName}}</h2>
+        <p>{{doctor.hospitalAddress}}</p>
+        <p>
+          <ion-icon name="pin"></ion-icon> {{doctor.miles}}</p>
+        <p class="cost">Appox. copay {{doctor.copay}}</p>
+        <rating [(ngModel)]="doctor.ratings" [disabled]="true">
+        </rating>
+        <button ion-button icon-left clear item-right class="ion-button-clock" (click)="ondemandpcpcalendarPage(doctor)">
+      <ion-icon ios="ios-time" md="md-time"></ion-icon>
+    </button>
+      </ion-item>
+      <!--<ion-item>
+        <img class="profile-pic" src="../../assets/images/u511.png" item-left>
+        <h1>Dr. Alice Lawson</h1>
+        <h2>Highland Hospital</h2>
+        <p>7453 Golden Avenue</p>
+        <p>
+          <ion-icon name="pin"></ion-icon> 1.3 miles</p>
+        <p class="cost">Appox. copay $50</p>
+        <ul>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u519.png" /> </li>
+        </ul>
+        <button ion-button icon-left clear item-right class="ion-button-clock" (click)="ondemandpcpcalendarPage()">
+      <ion-icon ios="ios-time" md="md-time"></ion-icon>
+    </button>
+      </ion-item>
+      <ion-item>
+        <img class="profile-pic" src="../../assets/images/u547.png" item-left>
+        <h1>Dr. Jesse Hardy</h1>
+        <h2>Alameda County Medical Center</h2>
+        <p>1369 Stanley Street</p>
+        <p>
+          <ion-icon name="pin"></ion-icon> 1.5 miles</p>
+        <p class="cost">Appox. copay $60</p>
+        <ul>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u536.png" /> </li>
+          <li><img src="../../assets/images/u536.png" /> </li>
+        </ul>
+        <button ion-button icon-left clear item-right class="ion-button-clock">
+      <ion-icon ios="ios-time" md="md-time"></ion-icon>
+    </button>
+      </ion-item>
+      <ion-item>
+        <img class="profile-pic" src="../../assets/images/u698.png" item-left>
+        <h1>Dr. Benjamin Green</h1>
+        <h2>Eden Medical Center</h2>
+        <p>4113 Sunny Avenue</p>
+        <p>
+          <ion-icon name="pin"></ion-icon> 2 miles</p>
+        <p class="cost">Appox. copay $60</p>
+        <ul>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u536.png" /> </li>
+          <li><img src="../../assets/images/u536.png" /> </li>
+          <li><img src="../../assets/images/u536.png" /> </li>
+        </ul>
+        <button ion-button icon-left clear item-right class="ion-button-clock">
+      <ion-icon ios="ios-time" md="md-time"></ion-icon>
+    </button>
+      </ion-item>-->
+
+
+    </ion-list>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      Recommended PCPs
+    </ion-card-header>
+    <ion-list>
+      <h3>Sort By: 
+        <button (click)="rating('ratings')"> Rating </button> <span> | </span>
+        <button (click)="rating('miles')">Distance</button> <span> | </span>
+        <button (click)="rating('time')">Time </button><span> | </span>
+        <button (click)="rating('copay')">Copay</button>
+      </h3>
+      <ion-item *ngFor="let recomdoctor of recomDocJson | orderBy : Sort">
+        <!--<ion-item *ngFor="let recomdoctor of recomDocJson">-->
+        <img class="profile-pic" [src]="recomdoctor.photoUrl" alt="{{recomdoctor.doctorName}}" item-left>
+        <h1>{{recomdoctor.doctorName}}</h1>
+        <h2>{{recomdoctor.hospitalName}}</h2>
+        <p>{{recomdoctor.hospitalAddress}}</p>
+        <p>
+          <ion-icon name="pin"></ion-icon> {{recomdoctor.miles}}</p>
+        <p class="cost">Appox. copay {{recomdoctor.copay}}</p>
+
+        <button ion-button icon-left clear item-right class="ion-button-clock" (click)="ondemandpcpcalendarPage(doctor)">
+      <ion-icon ios="ios-time" md="md-time"></ion-icon>
+    </button>
+      </ion-item>
+      <!--<ion-item *ngFor="let AvilableDoctor of AvilableDoctors">
+        <img class="profile-pic" [src]="doctor.imagePath" alt="{{doctor.name}}" item-left>
+        <h1>{{AvilableDoctor.doctorname}}</h1>
+        <h2>{{AvilableDoctor.hospitalname}}</h2>
+        <p>{{AvilableDoctor.hospitaladdress}}</p>
+        <p>
+          <ion-icon name="pin"></ion-icon> {{AvilableDoctor.hospitaldistance}}</p>
+        <p class="cost">{{AvilableDoctor.cost}}</p>
+        <ul>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u519.png" /> </li>
+        </ul>
+        <button ion-button icon-left clear item-right class="ion-button-clock" (click)="ondemandpcpcalendarPage()">
+      <ion-icon ios="ios-time" md="md-time"></ion-icon>
+    </button>
+        <div class="map2">
+          <div id="map">
+            <img src="">
+          </div>
+        </div>
+      </ion-item>-->
+
+
+      <!--<ion-item>
+        <img class="profile-pic" src="../../assets/images/u530.png" item-left>
+        <h1>Dr. Sofia Goodwin</h1>
+        <h2>West Age Hospital</h2>
+        <p>2665 High-Low Way</p>
+        <p>
+          <ion-icon name="pin"></ion-icon> 5 miles</p>
+        <p class="cost">Appox. copay $100</p>
+        <ul>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u536.png" /> </li>
+          <li><img src="../../assets/images/u536.png" /> </li>
+          <li><img src="../../assets/images/u536.png" /> </li>
+          <li><img src="../../assets/images/u536.png" /> </li>
+        </ul>
+        <button ion-button icon-left clear item-right class="ion-button-clock" (click)="onpcpcalendarPage()">
+      <ion-icon ios="ios-time" md="md-time"></ion-icon>
+    </button>
+      </ion-item>
+      <ion-item>
+        <img class="profile-pic" src="../../assets/images/u511.png" item-left>
+        <h1>Dr. Alice Lawson</h1>
+        <h2>Highland Hospital</h2>
+        <p>7453 Golden Avenue</p>
+        <p>
+          <ion-icon name="pin"></ion-icon> 1.3 miles</p>
+        <p class="cost">Appox. copay $50</p>
+        <ul>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u519.png" /> </li>
+        </ul>
+        <button ion-button icon-left clear item-right class="ion-button-clock">
+      <ion-icon ios="ios-time" md="md-time"></ion-icon>
+    </button>
+      </ion-item>
+      <ion-item>
+        <img class="profile-pic" src="../../assets/images/u547.png" item-left>
+        <h1>Dr. Jesse Hardy</h1>
+        <h2>Alameda County Medical Center</h2>
+        <p>1369 Stanley Street</p>
+        <p>
+          <ion-icon name="pin"></ion-icon> 1.5 miles</p>
+        <p class="cost">Appox. copay $60</p>
+        <ul>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u517.png" /> </li>
+          <li><img src="../../assets/images/u536.png" /> </li>
+          <li><img src="../../assets/images/u536.png" /> </li>
+        </ul>
+        <button ion-button icon-left clear item-right class="ion-button-clock">
+      <ion-icon ios="ios-time" md="md-time"></ion-icon>
+    </button>
+      </ion-item>-->
+    </ion-list>
+  </ion-card>
+</ion-content>

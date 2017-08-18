@@ -1,0 +1,54 @@
+page-on-demand-pcp-calendar {
+    .toolbar-title {
+        font-weight: 200 !important;
+        font-style: normal !important;
+        font-size: 16px !important;
+        color: #2886CC !important;
+    }
+    .item-inner {
+        border: none !important;
+    }
+    .date-aviliable span {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        color: #6EB2E1;
+    }
+    .date-aviliable ion-icon {
+        color: #6EB2E1;
+    }
+    .book-date p {
+        background: #F2F2F2;
+        height: 50px;
+        text-align: center;
+        vertical-align: middle;
+        padding: 19px 0;
+        width: 60%;
+        display: inline-block;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 16px;
+        color: #666666;
+    }
+    .book-date button {
+        background: #FDB315;
+        height: 50px;
+        width: 40%;
+        display: inline-block;
+        font-style: normal;
+        font-size: 16px;
+        color: #FFFFFF;
+        font-weight: 400;
+        border-left: 2px solid #fff;
+    }
+    ion-label {
+        margin: 0 !important;
+    }
+    ion-item {
+        border: none !important;
+        padding-left: 10px !important;
+    }
+    .item-block {
+        min-height: 0px;
+    }
+}

@@ -1,0 +1,89 @@
+<!--
+  Generated template for the PcpCalendarPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>{{doctorName}}</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <ion-header>
+        <ion-navbar color="primary">
+            <ion-title>{{viewTitle}}</ion-title>
+            <!--<ion-buttons end>
+        <button ion-button [disabled]="isToday" (click)="today()">Today</button>
+        <button ion-button (click)="changeMode('month')">M</button>
+        <button ion-button (click)="changeMode('week')">W</button>
+        <button ion-button (click)="changeMode('day')">D</button>
+        <button ion-button (click)="loadEvents()">Load Events</button>
+      </ion-buttons>-->
+        </ion-navbar>
+    </ion-header>
+
+    <ion-content class="has-header">
+
+        <!-- <calendar [eventSource]="eventSource" [calendarMode]="calendar.mode" [currentDate]="currentDate" (onCurrentDateChanged)="onCurrentDateChanged($event)"
+      (onEventSelected)="onEventSelected($event)" (onTitleChanged)="onViewTitleChanged($event)" (onTimeSelected)="onTimeSelected($event)"
+      step="30">
+      </calendar>
+
+      <ion-item *ngFor="let group of DateAvilable | groups">
+        <h3>{{group.name}}</h3>
+  
+        <ion-item *ngFor= "let resource of group.resources" class="book-date">
+      <p>{{resource.fromTime}} - {{resource.toTime}}</p>
+      <button (click)="onsamedayQAPage(resource)">Book</button>
+    </ion-item>
+
+      </ion-item> -->
+
+
+        <!--<ion-item *ngFor= "let date of DateAvilable | groupBy:'date'" class="book-date">
+{{date}}
+      <p>{{date.fromTime}} - {{date.toTime}}</p>
+      <button (click)="onsamedayQAPage(value)">Book</button>
+    </ion-item>
+
+  </ion-content> -->
+
+
+        <div class="pcp-calender-container">
+            <div class="calender-content" padding>
+                <div class="calender-header">
+                    <div class="leftcalender-event">
+                        <a href="javascript:void(0);" (click)="calenderMonthEvent('decrement')"><img src="assets/images/leftarrow.png" alt="leftArrow"></a>
+                        <span>{{calenderMonths[initCalenderMonth].month}}</span>
+                        <a href="javascript:void(0);" (click)="calenderMonthEvent('increment')"><img src="assets/images/rightarrow.png" alt="rightarrow"></a>
+                    </div>
+                    <div class="rightcalender-event">
+                        <a href="javascript:void(0);" (click)="calenderYearEvent('decrement')"><img src="assets/images/leftarrow.png" alt="leftArrow"></a>
+                        <span>{{initCalenderYear}}</span>
+                        <a href="javascript:void(0);" (click)="calenderYearEvent('increment')"><img src="assets/images/rightarrow.png" alt="rightarrow"></a>
+                    </div>
+                </div>
+                <div class="calender-date">
+                    <ion-grid>
+                        <ion-row class="date-header">
+                            <ion-col>M</ion-col>
+                            <ion-col>T</ion-col>
+                            <ion-col>W</ion-col>
+                            <ion-col>T</ion-col>
+                            <ion-col>F</ion-col>
+                            <ion-col>S</ion-col>
+                            <ion-col>S</ion-col>
+                        </ion-row>
+                        <ion-row class="date-content">
+                            <ion-col *ngFor="let dates of calenderDates">{{dates.value}}</ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </div>
+        </div>
+    </ion-content>

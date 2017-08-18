@@ -1,0 +1,106 @@
+page-avilable-pcp {
+  .nav-bg, .toolbar-background-md { 
+    background-color: rgba(40, 134, 204, 1);
+  }
+  .bar-button-default-ios,
+  .bar-button-default.bar-button-ios-default,
+  .bar-button-clear-ios-default, .back-button-icon-md, .bar-button-default-md {
+    color: rgb(133, 185, 227);
+    z-index: 9;
+  }
+  .toolbar-title-ios, .toolbar-title-md {
+    font-weight: 200;
+    font-style: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+  }
+  .card-ios, .card-md {
+    margin: 0;
+    width: 100%;
+  }
+  .card-header-ios, .card-header-md {
+    padding: 14px 16px;
+    color: #fff;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+  }
+  ion-card-header {
+    background: rgba(253, 179, 21, 1);
+    height: 40px;
+  }
+  .item-ios ion-avatar ion-img,
+  .item-ios ion-avatar img, .item-md ion-avatar ion-img,
+  .item-md ion-avatar img  {
+    width: 70px;
+    height: 70px;
+    border-radius: 0;
+    overflow: hidden;
+  }
+  ul li {
+    list-style: none;
+    float: left;
+  }
+  .profile-pic {
+    width: 80px;
+    height: auto;
+    position: relative;
+    bottom: 0px;
+  }
+  h1 {
+    color: #2171C0;
+    font-size: 14px !important;
+  }
+  h2 {
+    font-weight: 400 !important;
+    color: #2171C0;
+    font-size: 12px !important;
+  }
+  h3 {
+    font-style: normal;
+    font-size: 12px;
+    color: #2171C0;
+    padding: 10px;
+  }
+  h3 span {
+    color: rgb(205, 160, 196);
+  }
+  p,
+  p.cost {
+    font-weight: 400 !important;
+    color: #99C7E8 !important;
+    font-size: 12px !important;
+  }
+  p.cost {
+    color: #00CC00 !important;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  ul li img {
+    width: 16px;
+    height: 16px;
+  }
+  .ion-ios-time:before, .ion-md-time:before {
+    font-size: 21px;
+  }
+  ion-item .ion-button-clock {
+    bottom: 35px;
+    left: 20px;
+  }
+  .list-ios>.item-block, .list-md>.item-block {
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(153, 199, 232);
+  }
+  .list-ios>.item-block:last-child, .list-md>.item-block:last-child {
+    border: none;
+  }
+  .rating span {
+    font-size: 10px;
+  }
+  span.rating.disabled[_ngcontent-c0] .star-icon[_ngcontent-c0]:before,
+  .star-icon[_ngcontent-c0] {
+    color: #FFB80D;
+  }
+}

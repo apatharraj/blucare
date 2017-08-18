@@ -1,0 +1,91 @@
+<!--
+  Generated template for the DashboardPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-buttons class="start-btn" (click)="goToUserSchedule()" start>
+      <button>
+        <img src="{{UserPhoto}}" class="left"> 
+      </button>
+    </ion-buttons>
+    <ion-title>{{wish}}</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon> 
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="dash-boardpage">
+  <ion-list class="top-bar">
+    <div class="notification left">
+      <img src="../assets/images/u153.png"> <span> {{count}} </span>
+    </div>
+    <div class="mailing left">
+      <img src="../assets/images/u192.png"> <span> {{notification}} </span>
+    </div>
+    <div class="star left">
+      <img src="../assets/images/u200.png"> <span> {{rating}} </span>
+    </div>
+  </ion-list>
+  <ion-list class="top-bar">
+    <h2> Upcoming Schedule </h2>
+    <ion-item *ngFor="let getdetail of appointmentDetails">
+      <ion-thumbnail item-left="">
+        <img src="{{getdetail.appointmentDetails.photoUrl}}">
+      </ion-thumbnail>
+      <div class="content left">
+        <h3> {{getdetail.newDate | date: 'MM-dd-yyyy' }}, <span> {{getdetail.appointmentDetails.fromTime}} </span>          </h3>
+        <h4> {{getdetail.doctorName}}<span> @ </span> {{getdetail.appointmentDetails.hospitalName}} </h4>
+        <ion-icon name="close-circle" (click)="caclAppointment(getdetail)"></ion-icon>
+        <ion-icon name="trash" (click)="dltAppointment(getdetail)"></ion-icon>
+        <ion-icon name="create" (click)="reshedule(getdetail)"></ion-icon>
+        <h5>
+          <ion-icon name="pin"></ion-icon> {{getdetail.miles}} miles away </h5>
+      </div>
+      <div class="gmap">
+        <img src="https://maps.googleapis.com/maps/api/staticmap?zoom=18&size=600x150&maptype=roadmap&markers=color:blue|label:D|{{getdetail.appointmentDetails.latlng.lat}},{{getdetail.appointmentDetails.latlng.lng}}"
+          width="100%">
+      </div>
+    </ion-item>
+    <!--<div class="dash-schedule">
+      <ion-item class="item item-block item-ios">
+        <ion-thumbnail item-left="">
+          <img src="../assets/images/u159.png">
+        </ion-thumbnail>
+        <div class="content left">
+          <h3> Oct 2, 2016, <span> 12:30AM </span> </h3>
+          <h4> <span> at </span> Sunnyvale Healthcare Center </h4>
+          <h5> <span> img </span> 1.3 miles away </h5>
+        </div>
+      </ion-item>
+      <div class="gmap">
+        <img src="../assets/images/u165.png" width="100%">
+      </div>
+    </div>-->
+  </ion-list>
+
+  <!--<ion-list>
+    <img src="../assets/images/u213.png" width="100%">
+  </ion-list>-->
+</ion-content>
+<ion-footer>
+  <ion-list class="Appionment">
+    <div class="sameday" (click)="goToAppoinment()">
+      <img src="../assets/images/u219.png">
+      <h6>Same Day <br/>Appointment</h6>
+    </div>
+    <div class="schedule" (click)="goToAppoinmentNew()">
+      <img src="../assets/images/u209.png">
+      <h6>Schedule an <br/> Appointment</h6>
+    </div>
+  </ion-list>
+</ion-footer>

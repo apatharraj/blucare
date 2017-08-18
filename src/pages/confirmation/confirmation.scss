@@ -1,0 +1,79 @@
+page-confirmation {
+  ion-content {
+    background: url(../../assets/images/u852.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+  }
+  ion-list button {
+    width: 24px !important;
+    height: 24px !important;
+    background-color: transparent !important;
+  }
+  ion-list button ion-icon {
+    color: rgb(93, 162, 218)
+  }
+  ion-list ion-buttons {
+    width: 60px;
+    display: inline-block;
+  }
+  ion-list .bar-buttons-ios[right] {
+    right: 17px;
+    position: absolute;
+  }
+  ion-card {
+    border-radius: 0px !important;
+    background: transparent !important;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3) !important;
+    position: absolute;
+    top: 60%;
+  }
+  ion-card h1 {
+    font-weight: 700 !important;
+    font-style: normal !important;
+    font-size: 28px !important;
+    color: #2886CC !important;
+    text-align: center;
+    margin-bottom: 10px !important;
+  }
+  ion-card h2 {
+    font-weight: 200 !important;
+    font-style: normal !important;
+    font-size: 16px !important;
+    color: #2886CC;
+    text-align: center;
+    margin-bottom: 20px !important;
+  }
+  ion-card p {
+    font-weight: 200;
+    font-style: normal;
+    font-size: 36px !important;
+    color: #2786CB !important;
+    text-align: center;
+  }
+  ion-footer button {
+    height: 95px;
+    background-color: rgba(78, 101, 176, 1);
+    float: left;
+    width: 33.33%;
+  }
+  ion-footer button:first-child {
+    background-color: rgba(253, 179, 21, 1);
+  }
+  ion-footer button:last-child {
+    background-color: rgba(110, 178, 225, 1);
+  }
+  ion-footer button span {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+  }
+  ion-footer button ion-icon {
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    color: #fff;
+    padding-bottom: 17px;
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "rec": [{
+      "copay": 150,
+      "department": 5,
+      "doctorEmail": "",
+      "doctorName": "Dr.Khaled M.D",
+      "hospitalAddress": "40 Wright Street Palmer, MA  01069",
+      "hospitalName": "Baystate Wing Hospital",
+      "id": "5b1b521f7ce3b191442d63bb8fa9df49",
+      "latlng": {
+        "lat": 42.1694184,
+        "lng": -72.3433912
+      },
+      "miles": 43.68,
+      "phoneNumber": "+1 413-572-5400",
+      "photoUrl": "https://cdn.kyruus.com/pm-prd/assets/generic-avatar-male-1ef404a4.png",
+      "ratings": 4.5,
+      "time": 2
+    },
+    {
+      "copay": 100,
+      "department": 2,
+      "doctorEmail": "",
+      "doctorName": "Dr.Megan Abad, P.A.",
+      "hospitalAddress": "759 Chestnut Street Springfield, MA  01199",
+      "hospitalName": "Baystate Medical Center",
+      "id": "e8818a109c6b71c731cf5ba514ccabda",
+      "latlng": {
+        "lat": 42.1216158,
+        "lng": -72.60589
+      },
+      "miles": 61.85,
+      "phoneNumber": "+1 413-794-0000",
+      "photoUrl": "https://cdn.kyruus.com/pm-prd/assets/generic-avatar-male-1ef404a4.png",
+      "ratings": 4,
+      "time": 2
+    },
+    {
+      "copay": 50,
+      "department": 1,
+      "doctorEmail": "",
+      "doctorName": "Dr.Roger J, M.D",
+      "hospitalAddress": "57 Union Street Westfield, MA  01085",
+      "hospitalName": "Baystate Noble Hospital",
+      "id": "9863ac39e5f1962309c0b215a8396c33",
+      "latlng": {
+        "lat": 42.1309993,
+        "lng": -72.7416331
+      },
+      "miles": 71.2,
+      "phoneNumber": "+1 413-572-6050",
+      "photoUrl": "https://cdn.kyruus.com/pm-prd/assets/generic-avatar-male-1ef404a4.png",
+      "ratings": 5,
+      "time": 1
+    },
+    {
+      "copay": 15,
+      "department": 7,
+      "doctorEmail": "",
+      "doctorName": "Dr.Abbas Babaki",
+      "hospitalAddress": "18101 Lorain Avenue, Department of Medicine Cleveland , OH 44111",
+      "hospitalName": "FairView Hospital",
+      "id": "9863ac39e5f1962309c0b215a848597f",
+      "latlng": {
+        "lat": 41.436532,
+        "lng": -81.944514
+      },
+      "miles": 707.08,
+      "phoneNumber": "+1 218-635-8750",
+      "photoUrl": "https://cdn.kyruus.com/pm-prd/assets/generic-avatar-male-1ef404a4.png",
+      "ratings": 3,
+      "time": 1.5
+    }
+  ]
+
+}

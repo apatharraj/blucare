@@ -1,0 +1,8 @@
+{
+  "name": "BlueCareApp",
+  "app_id": "9bcaf8ec",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

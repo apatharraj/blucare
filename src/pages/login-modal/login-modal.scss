@@ -1,0 +1,165 @@
+page-login-modal {
+  .login-page {
+    // background: #4F65B0;
+    // width: 100%;
+    // position: relative;
+    // padding-left: 20px;
+    .field-control {
+      width: 100%;
+      display: inline-table;
+      input {
+        width: 100%;
+        border: 0px;
+        color: #fff;
+        font: 18px Arial;
+        padding: 0px 15px 0px 70px;
+        border-bottom: 1px solid #28B3EF;
+      }
+    }
+  }
+  .forgot {
+    background: 0px none;
+    box-shadow: none;
+    padding: 7px 0px 0px 0px;
+    width: 100%;
+    color: rgb(39, 170, 225);
+    text-transform: none;
+    margin-left: 10px !important;
+  }
+  .login {
+    background: transparent;
+    padding: 0;
+  }
+  .profile-icon {
+    // background: url(../assets/images/u68.png) no-repeat left center;
+    // width: 50px;
+    // height: 80px;
+    margin-left: 10px !important;
+  }
+  .pass-icon {
+    // background: url(../assets/images/u72.png) no-repeat left center;
+    // width: 50px;
+    // height: 80px;
+    margin-left: 10px !important;
+  }
+  .log-icon {
+    background: #455BA6;
+    position: absolute;
+    right: 16px;
+    bottom: 60px;
+    width: 50px;
+    height: 49px;
+  }
+  .bar-buttons[left] {
+    float: left;
+  }
+  .log-icon img {
+    width: 40px;
+    height: 40px;
+    margin: 4px auto;
+    display: block;
+  }
+  *::-webkit-input-placeholder {
+    color: #fff;
+  }
+  *:-moz-placeholder {
+    color: #fff;
+  }
+  *:-ms-input-placeholder {
+    /* IE10+ */
+    color: #fff;
+  }
+  .loading {
+    width: 100%;
+    /* height: 80px; */
+    position: relative;
+    top: 50px;
+    img {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  .heading {
+    width: 126px;
+    height: 42px;
+    margin: 0 auto;
+    position: relative;
+    top: 70px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .login-bg {
+    background: url(../assets/images/u51.png) no-repeat center center;
+    width: 100%;
+    background-size: cover;
+    display: block;
+    height: 670px;
+    min-height: 670px;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .loginpage-bg {
+    background-color: rgba(69, 91, 166, 0.88) !important;
+    float: left;
+    width: 100%;
+  }
+  .item {
+    border-bottom: 1px solid #29B4EF !important;
+    padding: 10px 0 !important;
+  }
+  ion-item {
+    background: transparent !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+  .item-inner {
+    padding: 0 !important;
+  }
+  ion-label {
+    margin: 0 !important;
+  }
+  ion-list {
+    padding: 0 !important;
+    margin: 0 !important;
+    border-bottom: 1px solid #29B4EF !important;
+  }
+  ion-buttons,
+  ion-content {
+    background: transparent !important;
+  }
+  .inverted-arrow button {
+    float: right;
+    background: #4E64AF url(../img/u24_1.png) no-repeat center !important;
+    background-position: center center;
+    width: 50px;
+    height: 49px !important;
+    box-shadow: none;
+    padding: 0;
+    background-size: 40px 40px;
+    right: -2px;
+    bottom: 0px;
+    border: 0px;
+    padding: 5px !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    img {
+      -ms-transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+  }
+  input {
+    font-size: 16px;
+    font-weight: 200;
+    font-style: normal;
+    color: rgb(228, 228, 228);
+  }
+  .item-inner {
+    border: none;
+    box-shadow: none !important;
+    border-bottom-color: transparent !important;
+  }
+}

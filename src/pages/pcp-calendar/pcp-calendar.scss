@@ -1,0 +1,103 @@
+page-pcp-calendar {
+    .toolbar-title {
+        font-weight: 200 !important;
+        font-style: normal !important;
+        font-size: 16px !important;
+        color: #2886CC !important;
+    }
+    .book-date {
+        p {
+            background: #F2F2F2;
+            height: 50px;
+            text-align: center;
+            vertical-align: middle;
+            padding: 19px 0;
+            width: 60%;
+            display: inline-block;
+            font-weight: 200;
+            font-style: normal;
+            font-size: 16px;
+            /*color: #666666;*/
+        }
+        button {
+            background: #FDB315;
+            height: 50px;
+            width: 40%;
+            display: inline-block;
+            font-style: normal;
+            font-size: 16px;
+            color: #FFFFFF;
+            font-weight: 400;
+            border-left: 2px solid #fff;
+        }
+    }
+    [_nghost-c1]>div[_ngcontent-c1] {
+        height: 47%;
+    }
+    .pcp-calender-container {
+        background: #ccc;
+        .calender-header {
+            height: 30px;
+            .leftcalender-event {
+                float: left;
+                span {
+                    padding: 0 20px;
+                }
+            }
+            .rightcalender-event {
+                float: right;
+                span {
+                    padding: 0 20px;
+                }
+            }
+        }
+        .calender-date {
+            background-color: #fff;
+            .date-header {
+                color: #fff;
+                text-align: center;
+                .col {
+                    background-color: #536ab1;
+                    border-right: 1.5px solid #fff;
+                    height: 40px;
+                    vertical-align: middle;
+                    line-height: 40px;
+                    padding: 0;
+                    width: 50px;
+                    min-width: 50px;
+                    -webkit-flex-grow: initial;
+                    flex-grow: initial;
+                }
+                .col:last-child {
+                    border-right: none;
+                }
+            }
+            .date-content {
+                .col {
+                    border-right: 1.5px solid #ccc;
+                    border-bottom: 1px solid #ccc;
+                    height: 40px;
+                    vertical-align: middle;
+                    padding: 0px;
+                    line-height: 40px;
+                    width: 50px;
+                    min-width: 50px;
+                    -webkit-flex-grow: initial;
+                    flex-grow: initial;
+                    text-align: center;
+                }
+                .col:last-child {
+                    border-right: none;
+                }
+            }
+        }
+    }
+}
+
+.monthview-eventdetail-timecolumn {
+    display: none;
+}
+
+.event-detail {
+    display: none;
+}

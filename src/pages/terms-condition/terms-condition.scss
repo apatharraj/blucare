@@ -1,0 +1,36 @@
+page-terms-condition {
+  .nav-bg {
+    background-color: rgba(40, 134, 204, 1);
+  }
+  .bar-button-default-ios,
+  .bar-button-default.bar-button-ios-default,
+  .bar-button-clear-ios-default {
+    color: rgb(133, 185, 227);
+  }
+  .toolbar-title-ios {
+    font-weight: 200;
+    font-style: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+  }
+  p {
+    font-size: 13px;
+    color: #666666;
+    line-height: 16px;
+  }
+  ion-footer button {
+    width: 50%;
+    height: 60px;
+    float: left;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+  }
+  ion-footer button:first-child {
+    background-color: rgba(110, 178, 225, 1);
+  }
+  ion-footer button:last-child {
+    background-color: rgba(78, 101, 176, 1);
+  }
+}

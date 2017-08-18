@@ -1,0 +1,60 @@
+page-appointment-type {
+  .toolbar-title {
+    font-weight: 200 !important;
+    font-style: normal !important;
+    font-size: 16px !important;
+    color: #2886CC !important;
+  }
+  .grayy-bg {
+    background-color: #F2F2F2;
+    border-radius: 50%;
+    width: 115px;
+    height: 115px;
+    margin: 0 auto;
+    img {
+      width: 50px;
+      margin: 28%;
+    }
+  }
+  .display-view {
+    width: 100%;
+    padding: 10% 10% 0% 10%;
+    .width50 {
+      width: 50%;
+      float: left;
+    }
+  }
+  .appoint img {
+    padding-top: 5px;
+  }
+  .wishes {
+    font-family: OpenSans-Light, "Open Sans Light", "Open Sans";
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+    color: #2886cc;
+    text-align: center;
+  }
+  .menu {
+    float: right;
+    position: absolute;
+    top: -5px;
+    right: 0px;
+  }
+  .bar-button-default-md {
+    color: #5DA2DA;
+  }
+  .width50 a {
+    text-align: center;
+    height: 50px;
+    font-family: 'OpenSans', 'Open Sans';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #2171C0;
+    margin: 10px 0px;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+  }
+}

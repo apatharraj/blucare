@@ -1,0 +1,28 @@
+<ion-content>
+  <ion-buttons class="inverted-arrow">
+    <button ion-button (click)="closeModal()"><img src="../assets/images/u56.png"></button>
+  </ion-buttons>
+  <ion-list class="loginpage-bg">
+    <form [formGroup]="todo" (ngSubmit)="logForm()">
+      <ion-item>
+        <ion-icon class="profile-icon" item-left><img src="../assets/images/u68.png" width="30px" height="30px" /></ion-icon>
+        <!--<ion-input type="text" formControlName="title"></ion-input>-->
+        <ion-input type="text" formControlName="emailField" placeholder="Policy No/ Email/ User Name" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon class="profile-icon" item-left><img src="../assets/images/u72.png" width="30px" height="30px" /></ion-icon>
+        <!--<ion-textarea formControlName="description"></ion-textarea>-->
+        <ion-input type="password" formControlName="passwordField" placeholder="Password" required></ion-input>
+      </ion-item>
+      <ion-buttons left>
+        <button class="forgot" ion-button (click)="presentPrompt()">Forgot password? </button>
+      </ion-buttons>
+      <ion-buttons right> 
+        <button class="login" ion-button (click)="submitLogin()" type="submit" [disabled]="!todo.valid"> 
+                   <img src="../assets/images/u84.png" width="50px" height="50px" />
+                </button>
+      </ion-buttons>
+    </form>
+  </ion-list>
+
+</ion-content>

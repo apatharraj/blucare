@@ -1,0 +1,198 @@
+// http://ionicframework.com/docs/v2/theming/
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+.show-page .modal-wrapper {
+  top: 61.8%;
+  position: relative;
+}
+
+.back-button-text {
+  text-indent: -999px;
+}
+
+.bar-button-default-ios,
+.bar-button-default.bar-button-ios-default,
+.bar-button-clear-ios-default {
+  color: #85b9e3;
+}
+
+.menu-inner {
+  right: 0px !important;
+  left: auto !important;
+}
+
+.menu-inner {
+  width: 100% !important;
+  .content-md,
+  .content-ios {
+    background: url(../assets/images/bg_menu.png) no-repeat top center !important;
+    background-size: cover !important;
+  }
+  .item-md,
+  .item-ios {
+    background: transparent !important;
+  }
+  .list-md .item-block .item-inner,
+  .list-ios .item-block .item-inner {
+    border: 0px !important;
+  }
+  .label-md,
+  .label-ios {
+    color: #fff !important;
+    text-align: right !important;
+    padding: 0px 15% 0% 0% !important;
+    font-family: 'OpenSans-Light', 'Open Sans Light', 'Open Sans', Arial !important;
+    font-size: 18px !important;
+  }
+  .dash-icon {
+    background: url(../assets/images/u131.png) no-repeat !important;
+  }
+  button {
+    width: 100% !important;
+    background: none !important;
+    float: right !important;
+    padding: 0% 10% 2% 0% !important;
+  }
+  .menus-icons-0 {
+    margin-top: 120px !important;
+  }
+  .menus-icons-2 .item-inner .input-wrapper .label-md,
+  .menus-icons-2 .item-inner .input-wrapper .label-ios {
+    background: url(../assets/images/u143.png) no-repeat right !important;
+  }
+  .logout-icon {
+    padding: 0% 9.5% 0% 0% !important;
+  }
+  .menus-icons-0 .item-inner .input-wrapper .label-md,
+  .menus-icons-0 .item-inner .input-wrapper .label-ios {
+    background: url(../assets/images/u131.png) no-repeat right !important;
+  }
+  .menus-icons-1 .item-inner .input-wrapper .label-md,
+  .menus-icons-1 .item-inner .input-wrapper .label-ios {
+    background: url(../assets/images/u133.png) no-repeat right !important;
+    width: 24px !important;
+    height: 24px !important;
+  }
+  .close-button {
+    background: url(../assets/images/u114.png) no-repeat !important;
+    width: 32px !important;
+    float: left !important;
+    padding: 0 !important;
+    text-align: left !important;
+    position: absolute !important;
+    top: 15px !important;
+    left: 15px !important;
+    height: 32px !important;
+    text-indent: -999em !important;
+  }
+  .bar-buttons {
+    margin: 0px 0px 0px 0px !important;
+  }
+}
+
+.menu {
+  float: right !important;
+  position: absolute !important;
+  top: 20px !important;
+  right: 0px !important;
+}
+
+//Animation Works rotate 
+.loading img {
+  width: 100px;
+  -webkit-animation: spin linear 1.5s;
+  -moz-animation: spin linear 1.5s;
+  animation: spin linear 1.5s;
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  background-color: rgba(78, 100, 175, 0.45);
+  height: 100%;
+}
+
+.loader img {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100px;
+  -webkit-animation: spin 2s linear infinite;
+  -moz-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.heading img {
+  width: 170px;
+  position: relative;
+  -webkit-animation: myfirst 5s .5s;
+  /* Chrome, Safari, Opera */
+  animation: myfirst 5s .5s;
+}
+
+@-webkit-keyframes myfirst {
+  0% {
+    top: 200px;
+    opacity: 1;
+  }
+  25% {
+    top: 0px;
+    opacity: 1;
+  }
+  50% {
+    top: 0px;
+    opacity: 1;
+  }
+  75% {
+    top: 0px;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}

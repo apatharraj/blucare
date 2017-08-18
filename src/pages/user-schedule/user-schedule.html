@@ -1,0 +1,30 @@
+<ion-content padding>
+  <ion-list>
+    <ion-buttons>
+      <button ion-button icon-only (click)="onDashboard()">
+          <ion-icon name="home"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons right>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon> 
+      </button>
+    </ion-buttons>
+  </ion-list>
+  <ion-card>
+    <h1>Hello {{LoginUserName}}!</h1>
+    <h2>How can we help you?</h2>
+  </ion-card>
+</ion-content>
+<ion-footer>
+  <ion-list class="Appionment">
+    <div class="sameday" (click)="goToAppoinment()">
+      <img src="../assets/images/u219.png">
+      <h6>Same Day <br/>Appointment</h6>
+    </div>
+    <div class="schedule" (click)="goToAppoinmentNew()">
+      <img src="../assets/images/u209.png">
+      <h6>Schedule an <br/> Appointment</h6>
+    </div>
+  </ion-list>
+</ion-footer>
